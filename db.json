@@ -1,0 +1,41 @@
+{
+  "productList": [
+    {
+      "productName": "Pine",
+      "category": "Fruits",
+      "freshList": "Newly Arrived",
+      "price": 12,
+      "comment": "freshed Fruits",
+      "date": "2023-10-18T18:30:00.000Z",
+      "id": 1
+    },
+    {
+      "productName": "boat",
+      "category": "Electronic Appliances",
+      "freshList": "Newly Arrived",
+      "price": 500,
+      "comment": "Highly Recommneded",
+      "date": "2023-10-24T18:30:00.000Z",
+      "id": 2
+    },
+    {
+      "productName": "Oneplus",
+      "category": "Electronic Appliances",
+      "freshList": "Refurbished",
+      "price": 20000,
+      "comment": "Superb",
+      "date": "2016-05-16T18:30:00.000Z",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

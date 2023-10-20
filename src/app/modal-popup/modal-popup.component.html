@@ -1,0 +1,48 @@
+<h3 mat-dialog-title>Product Form</h3>
+<div mat-dialog-content>
+    <form [formGroup]="productForm">
+        <mat-form-field class="mt-3" appearance="outline">
+            <mat-label>Product Name</mat-label>
+            <input formControlName="productName" matInput placeholder="Enter Product Name">
+        </mat-form-field>
+        <mat-form-field class="mt-3" appearance="outline">
+            <mat-label>Product Categories</mat-label>
+            <mat-select formControlName="category" placeholder="Select Categories">
+                <mat-option value="Vegetables">Vegetables</mat-option>
+                <mat-option value="Fruits">Fruits</mat-option>
+                <mat-option value="Electronic Appliances">Electronic Appliances</mat-option>
+
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="example-full-width mt-3">
+            <mat-label>Choose a date</mat-label>
+            <input formControlName="date" matInput [matDatepicker]="picker">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker">
+                <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+            </mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <label class="fs-20 mt-3 fw-500" for="">Product Freshness</label>
+        <mat-radio-group formControlName="freshList">
+            <mat-radio-button class="d-block" *ngFor="let fresh of freshList" [value]="fresh">
+                {{fresh}}
+            </mat-radio-button>
+        </mat-radio-group>
+        <mat-form-field class="mt-2" appearance="outline">
+            <mat-label>Price</mat-label>
+            <input formControlName="price" type="number" matInput placeholder="Enter Price">
+        </mat-form-field>
+        <mat-form-field class="mt-2" appearance="outline">
+            <mat-label>Comment</mat-label>
+            <textarea formControlName="comment" matInput></textarea>
+        </mat-form-field>
+
+    </form>
+    <div mat-dialog-action class="text-end">
+        <button mat-raised-button class="me-2" mat-dialog-close>Close</button>
+        <button mat-raised-button color="primary" (click)="addProduct()">{{actionBtn}}</button>
+
+    </div>
+
+</div>
