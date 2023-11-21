@@ -1,15 +1,6 @@
 {
   "productList": [
     {
-      "productName": "Dispatched Onion",
-      "category": "Vegetables",
-      "freshList": "Newly Arrived",
-      "price": 1012,
-      "comment": "Fresh Goods",
-      "date": "2023-11-20T18:30:00.000Z",
-      "id": 1
-    },
-    {
       "productName": "dispatched banana",
       "category": "Fruits",
       "freshList": "Newly Arrived",
@@ -62,6 +53,24 @@
       "comment": "Best in Range",
       "date": "2023-11-14T18:30:00.000Z",
       "id": 7
+    },
+    {
+      "productName": "kiwi",
+      "category": "Fruits",
+      "freshList": "Newly Arrived",
+      "price": 1200,
+      "comment": "Freshly Arrived",
+      "date": "2023-11-21T18:30:00.000Z",
+      "id": 8
+    },
+    {
+      "productName": "refrigerator",
+      "category": "Electronic Appliances",
+      "freshList": "Newly Arrived",
+      "price": 21999,
+      "comment": "Worth ",
+      "date": "2023-11-14T18:30:00.000Z",
+      "id": 9
     }
   ],
   "comments": [
