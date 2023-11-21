@@ -1,31 +1,67 @@
 {
   "productList": [
     {
-      "productName": "Pine",
-      "category": "Fruits",
+      "productName": "Dispatched Onion",
+      "category": "Vegetables",
       "freshList": "Newly Arrived",
-      "price": 12,
-      "comment": "freshed Fruits",
-      "date": "2023-10-18T18:30:00.000Z",
+      "price": 1012,
+      "comment": "Fresh Goods",
+      "date": "2023-11-20T18:30:00.000Z",
       "id": 1
     },
     {
-      "productName": "boat",
-      "category": "Electronic Appliances",
+      "productName": "dispatched banana",
+      "category": "Fruits",
       "freshList": "Newly Arrived",
-      "price": 500,
-      "comment": "Highly Recommneded",
-      "date": "2023-10-24T18:30:00.000Z",
+      "price": 1222,
+      "comment": "newly",
+      "date": "2023-11-21T18:30:00.000Z",
       "id": 2
     },
     {
-      "productName": "Oneplus",
-      "category": "Electronic Appliances",
-      "freshList": "Refurbished",
-      "price": 20000,
-      "comment": "Superb",
-      "date": "2016-05-16T18:30:00.000Z",
+      "productName": "Orange",
+      "category": "Fruits",
+      "freshList": "Newly Arrived",
+      "price": 1920,
+      "comment": "Newly Arrived",
+      "date": "2023-11-22T18:30:00.000Z",
       "id": 3
+    },
+    {
+      "productName": "apple",
+      "category": "Fruits",
+      "freshList": "Newly Arrived",
+      "price": 12000,
+      "comment": "Fresh product",
+      "date": "2023-11-08T18:30:00.000Z",
+      "id": 4
+    },
+    {
+      "productName": "Moosmbi",
+      "category": "Fruits",
+      "freshList": "Newly Arrived",
+      "price": 900,
+      "comment": "Fruits",
+      "date": "2023-11-13T18:30:00.000Z",
+      "id": 5
+    },
+    {
+      "productName": "Earphone",
+      "category": "Electronic Appliances",
+      "freshList": "Newly Arrived",
+      "price": 499,
+      "comment": "Best in range",
+      "date": "2023-11-23T18:30:00.000Z",
+      "id": 6
+    },
+    {
+      "productName": "usb cable",
+      "category": "Electronic Appliances",
+      "freshList": "Newly Arrived",
+      "price": 344,
+      "comment": "Best in Range",
+      "date": "2023-11-14T18:30:00.000Z",
+      "id": 7
     }
   ],
   "comments": [

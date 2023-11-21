@@ -1,10 +1,10 @@
-<mat-toolbar color="primary">
+<mat-toolbar class="bg_brown">
   <div class="container">
     <div class="d-flex gap-2  justify-content-between">
       <div class="align-self-center">
 
 
-        <span class="fs-14">CRUD Using Angular JS</span>
+        <span class="fs-14 text-white">Product Detail</span>
       </div>
       <div>
         <button mat-raised-button color="warn" (click)="openDialog()">Add Product</button>
@@ -20,45 +20,45 @@
       <input matInput (keyup)="applyFilter($event)" #input>
     </mat-form-field>
 
-    <div class="overflow-auto mat-elevation-z8">
-      <table mat-table [dataSource]="dataSource" matSort>
+    <div class="overflow-auto bg_brown mat-elevation-z8">
+      <table class="bg_brown" mat-table [dataSource]="dataSource" matSort>
 
 
         <ng-container matColumnDef="productName">
-          <th class="fs-20 p-4" mat-header-cell *matHeaderCellDef mat-sort-header> Product Name </th>
-          <td class="p-4" mat-cell *matCellDef="let row"> {{row.productName}} </td>
+          <th class="fs-20 p-4 text-white" mat-header-cell *matHeaderCellDef mat-sort-header>Dispatched Product</th>
+          <td class="p-4 text-white" mat-cell *matCellDef="let row"> {{row.productName}} </td>
         </ng-container>
 
 
         <ng-container matColumnDef="category">
-          <th class="fs-20 p-4" mat-header-cell *matHeaderCellDef mat-sort-header> Category </th>
-          <td class="p-4" mat-cell *matCellDef="let row"> {{row.category}} </td>
+          <th class="fs-20 p-4 text-white" mat-header-cell *matHeaderCellDef mat-sort-header> Category </th>
+          <td class="p-4 text-white" mat-cell *matCellDef="let row"> {{row.category}} </td>
         </ng-container>
 
 
         <ng-container matColumnDef="freshList">
-          <th class="fs-20 p-4" mat-header-cell *matHeaderCellDef mat-sort-header> Fresh List </th>
-          <td class="p-4" mat-cell *matCellDef="let row"> {{row.freshList}} </td>
+          <th class="fs-20 p-4 text-white" mat-header-cell *matHeaderCellDef mat-sort-header> Fresh List </th>
+          <td class="p-4 text-white" mat-cell *matCellDef="let row"> {{row.freshList}} </td>
         </ng-container>
 
 
         <ng-container matColumnDef="price">
-          <th class="fs-20 p-4" mat-header-cell *matHeaderCellDef mat-sort-header> Price </th>
-          <td class="p-4" mat-cell *matCellDef="let row"> {{row.price | currency}} </td>
+          <th class="fs-20 p-4 text-white" mat-header-cell *matHeaderCellDef mat-sort-header> Price </th>
+          <td class="p-4 text-white" mat-cell *matCellDef="let row"> {{row.price | currency}} </td>
         </ng-container>
 
         <ng-container matColumnDef="comment">
-          <th class="fs-20 p-4" mat-header-cell *matHeaderCellDef mat-sort-header> Comment </th>
-          <td class="p-4" mat-cell *matCellDef="let row"> {{row.comment}} </td>
+          <th class="fs-20 p-4 text-white" mat-header-cell *matHeaderCellDef mat-sort-header> Comment </th>
+          <td class="p-4 text-white" mat-cell *matCellDef="let row"> {{row.comment}} </td>
         </ng-container>
 
         <ng-container matColumnDef="date">
-          <th class="fs-20 p-4" mat-header-cell *matHeaderCellDef mat-sort-header> Date  </th>
-          <td class="p-4" mat-cell *matCellDef="let row"> {{row.date | date}} </td>
+          <th class="fs-20 p-4 text-white" mat-header-cell *matHeaderCellDef mat-sort-header> Date  </th>
+          <td class="p-4 text-white" mat-cell *matCellDef="let row"> {{row.date | date}} </td>
         </ng-container>
         <ng-container matColumnDef="action">
-          <th class="fs-20 p-4" mat-header-cell *matHeaderCellDef mat-sort-header> Action </th>
-          <td class="p-4" mat-cell *matCellDef="let row">
+          <th class="fs-20 p-4 text-white" mat-header-cell *matHeaderCellDef mat-sort-header> Action </th>
+          <td class="p-4 text-white" mat-cell *matCellDef="let row">
             <button mat-icon-button (click)="editProduct(row)" color="primary">
               <mat-icon>edit</mat-icon>
             </button>
@@ -72,11 +72,11 @@
 
 
         <tr class="mat-row" *matNoDataRow>
-          <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+          <td class="mat-cell text-white" colspan="4">No data matching the filter "{{input.value}}"</td>
         </tr>
       </table>
 
-      <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
+      <mat-paginator class="bg_brown text-white pagination_numbers" [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
     </div>
   </div>
 </div>
